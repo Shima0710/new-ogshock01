@@ -6,11 +6,11 @@
 // ロゴ画像のフェードイン・フェードアウト処理
 $(window).on('load', function () {
     // ロゴをフェードイン
-    $("#splash_logo").hide().fadeIn(1000, function () { // 1秒かけてフェードイン
+    $("#splash_logo").hide().fadeIn(100, function () { // 1秒かけてフェードイン
         // フェードイン完了後、フェードアウトの処理を遅延開始
-        $(this).delay(1000).fadeOut('slow', function () { // 2秒待機後フェードアウト
+        $(this).delay(100).fadeOut('slow', function () { // 2秒待機後フェードアウト
             // スプラッシュ画面のフェードアウト
-            $("#splash").fadeOut(800, function () {
+            $("#splash").fadeOut(100, function () {
                 // フェードアウト完了後、bodyに `appear` クラスを追加
                 $('body').addClass('appear');
             });
